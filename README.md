@@ -13,7 +13,7 @@ deleteがうまくいかなかった。本では以下のようになってい�
 <%= link_to '削除する', post_path(@post.id), data:{turbo_method: :delete, turbo_confirm:'本当に消しますか?'} %><br>
 ```
 Railsのバージョンが7になってturboの仕様が変わったことが原因だった。
-> Ruby on Rails 7では、rails-ujsが標準構成から外れ、Turboが標準構成に入りました。
+> Ruby on Rails 7では、rails-ujsが標準構成から外れ、Turboが標準構成に入りました。  
 (参考 https://picolab.dev/2022/03/23/rails7-turbo/)
 
 ### Refile（画像投稿）
